@@ -12,6 +12,7 @@ public class Order {
     public Order(List<OrderLine> orderLines) {
         checkNotNull(orderLines);
         if (orderLines.isEmpty()) {
+          System.out.println("Qasim");
             throw new IllegalArgumentException("Order must have at least one order line item");
         }
         this.orderLines = new ArrayList<>(orderLines);
